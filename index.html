@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>Assignment 5</title>
+    <style>
+         .wrapper{
+            width: 60%;
+            position: absolute;
+            top: 15%;
+            left: 20%;
+            margin: 5px;
+           background-color: rgb(188, 181, 181);
+           border: 3px solid black;
+         }
+        .wrapper>div{
+           display: inline-block;
+           height: 250px;
+           width: 200px;
+           margin: 10px;
+           max-width: 80%;
+           min-width: 30%;
+          text-align: center;
+          
+          
+        }
+        .hide{
+          opacity: 0;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="container">
+        <h1 class="header">Para 1</h1>
+       <p class="cont-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, inventore libero! Beatae dolorum itaque quis debitis enim esse, quaerat dolores repudiandae earum totam laudantium eveniet eius aut odio expedita aliquam, qui, vero sint consequatur? Alias consectetur labore ratione harum tempora.</p>
+    </div>
+    <div class="container">
+        <h1 class="header">Para 2</h1>
+       <p class="cont-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, inventore libero! Beatae dolorum itaque quis debitis enim esse, quaerat dolores repudiandae earum totam laudantium eveniet eius aut odio expedita aliquam, qui, vero sint consequatur? Alias consectetur labore ratione harum tempora.</p>
+    </div>
+    <div class="container">
+        <h1 class="header">Para 3</h1>
+       <p class="cont-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, inventore libero! Beatae dolorum itaque quis debitis enim esse, quaerat dolores repudiandae earum totam laudantium eveniet eius aut odio expedita aliquam, qui, vero sint consequatur? Alias consectetur labore ratione harum tempora.</p>
+    </div>
+    <div class="container">
+      <h1 class="header">Para 4</h1>
+       <p class="cont-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, inventore libero! Beatae dolorum itaque quis debitis enim esse, quaerat dolores repudiandae earum totam laudantium eveniet eius aut odio expedita aliquam, qui, vero sint consequatur? Alias consectetur labore ratione harum tempora.</p>
+    </div>
+    <div class="container">
+      <h1 class="header">Para 5</h1>
+       <p class="cont-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, inventore libero! Beatae dolorum itaque quis debitis enim esse, quaerat dolores repudiandae earum totam laudantium eveniet eius aut odio expedita aliquam, qui, vero sint consequatur? Alias consectetur labore ratione harum tempora.</p>
+    </div>
+    <div class="container">
+      <h1 class="header">Para 6</h1>
+       <p class="cont-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, inventore libero! Beatae dolorum itaque quis debitis enim esse, quaerat dolores repudiandae earum totam laudantium eveniet eius aut odio expedita aliquam, qui, vero sint consequatur? Alias consectetur labore ratione harum tempora.</p>
+    </div>
+</div>
+</body>
+<script>
+ $(function(){
+  $('.container').click(function(){
+    $(this).siblings().toggleClass('hide')
+   
+  })
+ })
+  
+
+</script>
+</html>
